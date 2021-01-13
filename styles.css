@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* background-color: rgb(250, 244, 236); */
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- Search ---- */
+
+.Search__Container{
+    /* position: sticky;
+    top: 0; */
+    width: 70%;
+    margin: auto;
+    /* margin-top: 20px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    text-align: center;
+    /* border-radius: 5px; */
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.Search__Input{
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    outline-color: rgb(130, 209, 223);
+    /* margin-bottom: 10px;  */
+}
+
+.Search__AdvSearch__Toggle{
+    padding-top: 4px;
+    margin: auto;
+    width: 90%  ;
+    text-align: end;
+    cursor: pointer;
+}
+.Search__AdvSearch__Toggle:hover{
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.Search__AdvSearch__Container{
+    padding: 15px 0 15px 20%;
+    font-size: small;
+    margin: auto;
+    text-align: start;
+    box-shadow: inset 0px 1px rgba(0,0,0,0.16), inset 0 2px 10px 0 rgba(0,0,0,0.12);
+    background-color:whitesmoke;
+}
+
+.Search__AdvSearch__Input{
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.Search__Button{
+    width: 20%;
+    min-width: 80px;
+    /* background-color:  rgb(130, 209, 223); */
+    background-color:  black;
+    border-style: none;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+/* ---- Images_Grid ---- */
+
+/* .Images_Grid__Container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    border-radius: 5px;
+    margin: 15px;
+    background-color: #fff;
+} */
+.Images_Grid__Container{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+    column-gap: 20px;
+    /* padding: 15px; */
+    /* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); */
+    border-radius: 5px;
+    margin-top: 15px;
+    /* background-color: #fff; */
+}
+
+/* ---- Contact ---- */
+
+.Contacto__Container{
+    display: flex;
+    justify-content: center;
+    margin: 5px 10px 10px 10px;
+    /* border-radius: 5px; */
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.Contacto__Form input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    outline-color: rgb(130, 209, 223);
+    margin-bottom: 10px;
+}
+
+#dd{
+    width: 500px;
+    padding: 8px;
+}
+
+
+
+/* .Contacto__Input{
+    border-radius: 2px;
+    border-width: 0.5px;
+    border-style: solid;
+    width: 60%;
+} */
+
+.Contacto__Label{
+    /* padding: 7px 0 3px 10px; */
+}
+
+/* ---- Photo_card ---- */
+
+.Photo_card__Container{    
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* padding: 10px; */
+    /* max-width: 310px; */
+    /* max-height: 310px; */
+    /* border-radius: 6px; */
+    /* background-color: rgb(250, 244, 236); */
+    /* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); */
+}
+
+/* If image width it's higher than it's height*/
+.Photo_card__Image--landscape{
+    width: 80%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.Photo_card__Image--portrait{
+    width: 80%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.Photo_card__Image{
+    margin: auto;
+    margin-bottom: 20px;
+    /* height: ; */
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
