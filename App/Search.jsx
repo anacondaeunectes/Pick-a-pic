@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { createApi } from 'unsplash-js';
-import Images_Grid from './Images_Grid';
-import Contact from '../App/Contacto/Contact'
+import Images_Grid from './Images_Grid/Images_Grid';
+import Contact from './Contacto/Contact'
 
 // This const keep the access to API via an accessKey
 const serverApi = createApi({

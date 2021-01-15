@@ -30882,7 +30882,7 @@ var Photo_card = function Photo_card(_ref) {
 
 var _default = Photo_card;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../../styles.css":"styles.css","../../assets/heart-outline.svg":"assets/heart-outline.svg"}],"Components/Images_Grid.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../styles.css":"styles.css","../../assets/heart-outline.svg":"assets/heart-outline.svg"}],"App/Images_Grid/Images_Grid.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30892,7 +30892,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _Photo_card = _interopRequireDefault(require("../App/Photo card/Photo_card"));
+var _Photo_card = _interopRequireDefault(require("../Photo card/Photo_card"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30930,7 +30930,7 @@ var Images_Grid = function Images_Grid(_ref) {
 
 var _default = Images_Grid;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../App/Photo card/Photo_card":"App/Photo card/Photo_card.jsx"}],"assets/close-sharp.svg":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Photo card/Photo_card":"App/Photo card/Photo_card.jsx"}],"assets/close-sharp.svg":[function(require,module,exports) {
 module.exports = "/close-sharp.8f25b7c4.svg";
 },{}],"App/Contacto/Contact.jsx":[function(require,module,exports) {
 "use strict";
@@ -31098,7 +31098,7 @@ var Contact = function Contact() {
 
 var _default = Contact;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../../assets/close-sharp.svg":"assets/close-sharp.svg"}],"Components/Search.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../assets/close-sharp.svg":"assets/close-sharp.svg"}],"App/Search.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31110,9 +31110,9 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _unsplashJs = require("unsplash-js");
 
-var _Images_Grid = _interopRequireDefault(require("./Images_Grid"));
+var _Images_Grid = _interopRequireDefault(require("./Images_Grid/Images_Grid"));
 
-var _Contact = _interopRequireDefault(require("../App/Contacto/Contact"));
+var _Contact = _interopRequireDefault(require("./Contacto/Contact"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31339,25 +31339,19 @@ var Search = function Search() {
 
 var _default = Search;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","unsplash-js":"node_modules/unsplash-js/dist/unsplash-js.esm.js","./Images_Grid":"Components/Images_Grid.jsx","../App/Contacto/Contact":"App/Contacto/Contact.jsx"}],"index.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","unsplash-js":"node_modules/unsplash-js/dist/unsplash-js.esm.js","./Images_Grid/Images_Grid":"App/Images_Grid/Images_Grid.jsx","./Contacto/Contact":"App/Contacto/Contact.jsx"}],"index.jsx":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
-var _Search = _interopRequireDefault(require("./Components/Search"));
-
-var _Contact = _interopRequireDefault(require("./App/Contacto/Contact"));
-
-var _Images_Grid = _interopRequireDefault(require("./Components/Images_Grid"));
+var _Search = _interopRequireDefault(require("./App/Search"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import App from './Components/App_Wishlist';
-// ReactDOM.render(<Grid_Imagenes imgsArray={g}/>, document.getElementById("root"));
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_Search.default, null), document.getElementById("root"));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./Components/Search":"Components/Search.jsx","./App/Contacto/Contact":"App/Contacto/Contact.jsx","./Components/Images_Grid":"Components/Images_Grid.jsx"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./App/Search":"App/Search.jsx"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

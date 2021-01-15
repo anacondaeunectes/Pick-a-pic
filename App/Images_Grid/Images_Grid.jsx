@@ -1,5 +1,5 @@
 import React from 'react';
-import Photo_card from '../App/Photo card/Photo_card';
+import Photo_card from '../Photo card/Photo_card';
 
 const Images_Grid = ({imgsArray, response_IsEmpty}) => {
 
